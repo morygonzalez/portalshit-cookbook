@@ -15,5 +15,5 @@ end
 
 describe file('/etc/nginx/conf.d/portalshit.conf') do
   it { should be_file }
-  its(:content) { should match /server_name portalshit\.net/ }
+  its(:content) { should match(/~\(\[a-z\]\[a-z0-9\\-\]\+\?\\\.\)\?portalshit\\\.net;/) }
 end
