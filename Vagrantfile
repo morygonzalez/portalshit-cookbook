@@ -10,7 +10,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "base"
+  # config.vm.box = "base"
+
+  config.vm.box = "ubuntu-13.10-puppet"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-1310-x64-virtualbox-puppet.box"
+  config.vm.hostname = "portalshit.local"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
