@@ -1,3 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'serverspec'
+group :test do
+  gem 'serverspec'
+end
+
+group :development do
+  gem 'puppet'
+end
