@@ -5,5 +5,5 @@ group :test do
 end
 
 group :development do
-  gem 'puppet'
+  gem 'itamae'
 end
